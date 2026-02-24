@@ -73,7 +73,7 @@ async function startXeonBotInc() {
             logger: pino({ level: 'silent' }),
             // اگر سیشن ہے تو کیو آر نہیں دکھائے گا
             printQRInTerminal: process.env.SESSION_ID ? false : true,
-            browser: ["Zahid King MD", "Chrome", "20.0.04"],
+            browser: ["Ubuntu", "Chrome", "20.0.04"],
             auth: {
                 creds: state.creds,
                 keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "fatal" }).child({ level: "fatal" })),
